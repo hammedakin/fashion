@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+/* Showcase */
+.showcase {
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(#00000000, #00000000), url(../../assets/bg.jpg) no-repeat;
+  background-size: cover; */
+  /* background: #0e0e0e; */
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.showcase .showcase-content {
+  margin-top: 20vh;
+}
+
+.showcase .showcase-content h1 {
+  font-size: 3.5rem;
+}
+
+/* Showcase  */
+
+/* About */
+.about .first{
+padding: 0 5rem ;
+}
+
+.about a {
+  text-decoration: #f0f006 underline 2px ;
+  text-decoration-thickness: 5px;
+}
+
+.about a:hover {
+  text-decoration: #383838 underline 2px ;
+  text-decoration-thickness: 5px;
+}
+/* About */
+/* More */
+.more .first{
+padding: 0 5rem ;
+}
+.more a {
+  text-decoration: #f49797 underline 2px ;
+  text-decoration-thickness: 5px;
+}
+.more a:hover {
+  text-decoration: #383838 underline 2px ;
+  text-decoration-thickness: 5px;
+}
+/* More */
+
+/* Services */
+.services .first{
+background: url(../../assets/bg1.jpg) no-repeat center;
+height: 70vh!important;
+background-size: cover;
+padding: 0 5rem;
+
+}
+.services .first .text{
+  margin-top: 45vh;
+}
+.services .second{
+background: url(../../assets/bg2.jpg) no-repeat center;
+height: 70vh!important;
+background-size: cover;
+padding: 0 5rem;
+
+}
+.services .second .text{
+  margin-top: 45vh;
+}
+/* Services */
+
+/* Testimonials */
+.testimonials {
+  padding: 7rem 0;
+}
+/* Testimonials */
+
+
+/* Contact */
+.contact {
+  /* height: 100vh; */
+  overflow: hidden !important;
+}
+
+.get-quote {
+  padding: 3rem 0;
+
+}
+
+.contact .contact-img {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#00000000, #00000000), url(../../assets/7.jpg) no-repeat;
+  background-size: cover;
+  /* width: 100vw; */
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+
+/* .contact img {
+  position: relative;
+  bottom: 10rem !important;
+} */
+
+/* Form Style */
+* {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+label {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 12px;
+  color: gray;
+}
+
+.input-style {
+  width: 100%;
+  /* padding: 3px 5px; */
+  margin: 0px;
+  display: inline-block;
+  border: 0px solid grey;
+  border-bottom: 1px solid grey;
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--light-color);
+  box-shadow: none;
+  background: transparent !important;
+  margin-bottom: 1rem !important;
+}
+.textarea-style {
+  height: 100px;
+  font-size: 15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-style:hover,
+.input-style:focus {
+  border: 0px solid var(--pry-color);
+  border-bottom: 1.5px solid var(--pry-color);
+}
+
+  .textarea-style:hover {
+  height: 100px;
+  font-size: 15px;
+  border-bottom: 1.5px solid var(--pry-color);
+
+}
+
+/* Form Style */
+
+/* Contact */
+
+
+
+
+
+
+/* Media Query for Mobile device */
+/* Media Query for Mobile device */
+
+
+@media screen and (max-width: 780px) {
+  .showcase {
+    background:  url(../../assets/bg.jpg) no-repeat center;
+    background-size: cover;
+  /* height: 70vh; */
+  }
+/* About */
+.about .row.row-reverse-sm {
+  flex-direction: column-reverse;
+}
+.about .first{
+  padding: 5rem 2rem !important;
+  text-align: center;
+  }
+
+/* About */
+
+/* More */
+.more .first{
+  padding: 5rem 2rem !important;
+  text-align: center;
+  }
+/* More */
+
+/* Services */
+.services .first{
+  padding: 0rem 2rem !important;
+  text-align: center;
+  }
+  .services .first .text{
+    margin-top: 45vh;
+  }
+  .services .second{
+    padding: 0rem 2rem !important;  
+    text-align: center;
+  }
+  .services .second .text{
+    margin-top: 45vh;
+  }
+  
+  /* Services */
+
+/* Contact */
+.contact {
+  height: auto;
+  overflow-y: visible !important;
+}
+/* 
+
+/* Contact */
+  
+}
+
+@media screen and (max-width: 580px) {
+
+  /* Showcase  */
+
+  .showcase .showcase-content img{
+    width: 10%;
+  }
+  /* Showcase  */
+
+/* More */
+.more .first{
+  padding: 5rem 2rem !important;
+  text-align: center;
+  }
+/* More */
+
+/* Contact */
+.contact .contact-img {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#00000000, #00000000), url(../../assets/7.jpg) no-repeat center -6rem;
+  background-size: cover;
+  height: 30vh;
+  overflow-x: hidden;
+}
+/* Contact */
+
+}
+/* Media Query for Mobile device */
+/* Media Query for Mobile device */

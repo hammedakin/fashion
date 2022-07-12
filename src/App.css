@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+/* Colors */
+.transparent {
+  background: transparent !important;
+}
+.pry-text {
+  color: var(--pry-color) !important;
+}
+.pry {
+  background-color: var(--pry-color) !important;
+}
+.pry-border {
+  border: var(--pry-color) 1px solid !important;
+}
+.pry-bold-text {
+  color: var(--pry-bold-color) !important;
+}
+.pry-bold {
+  background-color: var(--pry-bold-color) !important;
+}
+.sec-text {
+  color: var(--sec-color) !important;
+}
+.sec {
+  background-color: var(--sec-color) !important;
+}
+.sec-bold-text {
+  color: var(--sec-bold-color) !important;
+}
+.sec-bold {
+  background-color: var(--sec-bold-color) !important;
+}
+.light-bold-text {
+  color: gainsboro !important;
+}
+.light-text {
+  color: var(--light-color) !important;
+}
+.dark-text {
+  color: var(--dark-color) !important;
+}
+.grey-text {
+  color: grey !important;
+}
+.light-bg {
+  background-color: var(--light-color) !important;
+}
+.dark-bg {
+  background-color: var(--dark-color) !important;
+}
+
+.btn {
+  text-transform: capitalize !important;
+  border-radius: 3px !important;
+  padding: 10px 30px !important;
+  align-items: center !important;
+}
+.btn-border {
+  background-color: transparent !important;
+  color: var(--pry-color) !important;
+  border: var(--pry-color) 1px solid !important;
+}
+/* Button */
+
+/* border radius */
+.br-sm {
+  border-radius: 5px !important;
+}
+.br-md {
+  border-radius: 0.7rem !important;
+}
+.br-lg {
+  border-radius: 4rem !important;
+}
+/* border radius */
+
+/* Text Align */
+.text-justify {
+  text-align: justify !important;
+}
+
+/* Text Align */
+
+/* Font */
+.header-font {
+  font-family: var(--header-font) !important;
+}
+/* Font */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+
+body {
+  background: linear-gradient(#000000be, #000000be),url(./assets/bg2.jpg) fixed center no-repeat;
+    background-size: cover; 
+  margin: 0 auto;
+  color: var(--light-color) !important;
+  line-height: 1.6;
+  /* font: 400 15px/28px "Poppins", sans-serif!important; */
+  font-family: "Barlow", sans-serif !important;
+  overflow-x: hidden !important;
+  /* font-size: 18px !important; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Fraunces", serif !important;
+
+  font-weight: 600 !important;
+}
+
+/* Scrollbar  */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  border: none;
+  background-color: whitesmoke;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pry-bold-color);
+  height: 7px;
+}
+
+/* Scrollbar  */
+
+/* Scroll To Top Button  */
+#myBtn {
+  box-shadow: none !important;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: -5px;
+  z-index: 99;
+}
+
+/* Global */
+
+/* Global */
+/* Global */
+
+/* Navbar */
+nav {
+  /* background-color: transparent !important; */
+  transition: 0.5s ease !important;
+  padding: 2rem 0 !important;
+  /* background: linear-gradient(#0000003d, #00000000); */
+  /* background-color: #0e0e0e; */
+}
+/* When Scrolled */
+.nav-scrolled {
+  padding: 1rem 0 !important;
+  background: #fffff6;
+}
+nav.nav-scrolled .nav-item a {
+  color: var(--dark-color) !important;
+  font-size: 1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  border-bottom: transparent solid 2px !important;
+}
+
+nav.nav-scrolled .nav-item a:hover {
+  border-bottom: var(--pry-color) solid 2px !important;
+  transition: 0.1s ease !important;
+}
+/* When Scrolled */
+
+.active1 {
+  border-bottom: var(--pry-color) solid 2px !important;
+  transition: 0.1s ease !important;
+}
+
+nav button.navbar-toggler {
+  background-color: none !important;
+}
+
+.navbar-toggler-icon {
+  background: none !important;
+}
+
+nav .nav-item a {
+  color: var(--light-color);
+  font-size: 1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  border-bottom: transparent solid 2px !important;
+}
+
+nav .nav-item a:hover {
+  border-bottom: var(--pry-color) solid 2px !important;
+  transition: 0.1s ease !important;
+}
+
+nav .btn {
+  border: 1px transparent solid;
+}
+nav .btn:hover {
+  transition: 0.1s ease !important;
+  background-color: transparent !important;
+  border: 1px var(--pry-bold-color) solid;
+}
+
+#header {
+  background: #0c0b0999;
+  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 25px 0;
+}
+
+/* Navbar */

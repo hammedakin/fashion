@@ -1,0 +1,30 @@
+/* CSS Variables */
+:root {
+  --pry-color: #fff44f;
+  --pry-bold-color: #fff44f;
+  --sec-color: #d8cef3;
+  --sec-bold-color: #b1a9ea;
+  --dark-color: #000;
+  --dark-hover-color: #1d1d1d;
+  --light-color: #fafafa;
+  --grey-color: #fbfbfe80;
+
+  --header-font: 'Fraunces', serif;
+  --text-font: 'Barlow', sans-serif;
+}
+/* CSS Variables */
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
