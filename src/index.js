@@ -6,6 +6,7 @@ import App from './App';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import 'jquery'
 import 'bootstrap/dist/js/bootstrap'
+
 import "react-toastify/dist/ReactToastify.css";
 import reportWebVitals from './reportWebVitals';
 import ScrollToTop from './ScrollToTop';

@@ -98,8 +98,9 @@
 /* Global */
 
 body {
-  background: linear-gradient(#000000be, #000000be),url(./assets/bg2.jpg) fixed center no-repeat;
-    background-size: cover; 
+  background: linear-gradient(#000000be, #000000be),
+    url(./assets/bg2.jpg) fixed center no-repeat;
+  background-size: cover;
   margin: 0 auto;
   color: var(--light-color) !important;
   line-height: 1.6;
@@ -195,6 +196,10 @@ nav button.navbar-toggler {
   background: none !important;
 }
 
+nav .navbar-brand {
+  width: 43% !important;
+}
+
 nav .nav-item a {
   color: var(--light-color);
   font-size: 1rem;
@@ -227,3 +232,14 @@ nav .btn:hover {
 }
 
 /* Navbar */
+
+@media screen and (max-width: 580px) {
+  /* Navbar */
+  nav .navbar-brand {
+    width: 50% !important;
+  }
+  nav img {
+    width: 70% !important;
+  }
+  /* Navbar */
+}

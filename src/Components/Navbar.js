@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react"; 
 import { NavLink, Link } from "react-router-dom";
 import ScrollTopTopButton from "./ScrollToTopButton";
-// import logo from "./logo.jpeg";
+import white from '../assets/white.png'
+import black from '../assets/black.png'
+
 const Navbar = () => {
 
   const [isVisible, setIsVisible] = useState(false); 
- 
   useEffect(() => { 
     // Nav is displayed after scrolling for 100 pixels 
     const toggleVisibility = () => { 
@@ -23,8 +24,10 @@ const Navbar = () => {
     <>
 
 <nav class={`navbar navbar-expand-md navbar-light shadow-none fixed-top ${isVisible ? 'nav-scrolled' : ''}`}>
-  <div class="container-fluid">
-    <Link class="navbar-brand light-text" to="/">Trynewthis.com</Link>
+  <div class="container">
+    <Link class="navbar-brand " to="/">
+      <img src={`${isVisible ? black: white}`} alt="AprilByDunni" width={'30%'} />
+              </Link>
     <button
       class="navbar-toggler"
       type="button"
@@ -34,12 +37,11 @@ const Navbar = () => {
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <i class="fas fa-bars light-text"></i>
+      <i class={`bi bi-list ${isVisible ? 'dark-text' : 'light-text'} h3`}></i>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav text-center animated fadeInUp mx-auto">
-            </ul>
-            <ul class="navbar-nav animated fadeIn text-center">
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+            <ul class="navbar-nav text-center">
               <li class="nav-item">
                 <NavLink tag={Link} activeClassName="active1 " to="/">
                   Home
@@ -65,13 +67,15 @@ const Navbar = () => {
                 </NavLink>
               </li>
 
-              {/* <Link to="/join-us">
-                <li class=" btn-contact">
-                  <button type="btn" class="btn light-bg br-lg">
-                    Join Us
-                  </button>
+          
+            </ul>
+            <ul class="navbar-nav text-center ">
+             
+              <Link to="/join-us">
+                <li class="nav-item">
+                  <i class={`bi bi-chat-dots-fill h3 ${isVisible ? 'dark-text' : 'light-text'}`}></i>
                 </li>
-              </Link> */}
+              </Link>
             </ul>
     </div>
   </div>

@@ -17,7 +17,9 @@ const About = () => {
                         </p>
                         <Link to="/" className='dark-text'> Learn More </Link>
                     </div>
-                    <div className="col-md-6 p-0">
+                    <div className="col-md-6 p-0"
+                        data-aos="fade-right"
+                        data-aos-duration="1000">
                         <img src={img} width="100%" className='' />
                     </div>
                 </div>
@@ -28,7 +30,10 @@ const About = () => {
             <section className="more">
                 <div className="row align-items-center m-0">
                     <div className="col-md-6 p-0">
-                        <img src={img1} width="100%" className='' />
+                        <img src={img1} width="100%" className=''
+                            data-aos="fade-left"
+                            data-aos-duration="1000"
+                        />
                     </div>
                     <div className="col-md-6 first">
                         <h3 className="mb-4">
